@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif;}
+
+.sidebar {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1C86EE;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1f1f1;
+  display: block;
+  margin-left: 10%; /* Same as the width of the sidenav */
+}
+
+.sidebar a:hover {
+  color: #111;
+}
+
+.main {
+  margin-left: 20%; /* Same as the width of the sidenav */
+  padding: 2% 20% 5% 5%;
+}
+
+.menu {
+  margin-left: 10%; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+  font-size: 40px;
+  color: #f1f1f1;
+}
+.profile {
+  display: block;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.list {
+	list-style-type: square;
+}
+.maintext{
+	line-height: 1.6;
+	font-size:120%;
+}
+
+#table_paper {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table_paper td, #table_paper th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table_paper tr:nth-child(even){background-color: #f2f2f2;}
+
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <img src="img/profile.jpeg" width="250" height="250" class="profile">
+  <h1 class="menu">Danlu Liu</h1>
+  <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="publication.html"><i class="fa fa-fw fa-file-text-o"></i> Publications</a>
+<!--   <a href="#blog"><i class="fa fa-fw fa-rss"></i> Blogs</a> -->
+  <a href="pdf/Danlu_Liu_resume.pdf"><i class="fa fa-fw fa-user"></i> Resume</a>
+  <a href="mailto:dltb9@mail.missouri.edu"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+</div>
+
+<div class="main">
+  <h1 style="color:#1C86EE;">Publications</h1>
+  <hr>
+<table id="table_paper" style="margin-top: 10%;">
+  <tr>
+    <td><img src="img/JBHI_paper.png" width="80" height="80"></td>
+    <td>
+      <p  class="maintext">
+        <strong>D. Liu</strong>, W. Baskett, D. Beversdorf and C. Shyu<br>
+        "Exploratory Data Mining for Subgroup Cohort Discoveries and Prioritization"<br>
+        <i>IEEE Journal of Biomedical and Health Informatics, 2019</i><br>
+        [<a href="pdf/JBHI.pdf">PDF</a>] [<a href="pdf/ICTS_Poster.pdf">POSTER</a>]
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="img/BIBM.png" width="80" height="80"></td>
+    <td>
+      <p class="maintext">
+        M. Raju, <strong>D. Liu</strong>, F. W. Fraunfelder and C. Shyu<br>
+        "Discovering multifactorial associations with the development of age-related cataract using contrast mining"<br>
+        <i>2017 IEEE International Conference on Bioinformatics and Biomedicine (BIBM), 2017</i><br>
+        [<a href="pdf/BIBM.pdf">PDF</a>]
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="img/ISM.png" width="80" height="80"></td>
+    <td>
+      <p class="maintext">
+        Y. Ma, <strong>D. Liu</strong>, G. Scott, J. Uhlmann and C. Shyu<br> 
+        "In-Memory Distributed Indexing for Large-Scale Media Data Retrieval"<br>
+        <i>2017 IEEE International Symposium on Multimedia (ISM), 2017</i><br>  
+        [<a href="pdf/ISM.pdf">PDF</a>]
+      </p>
+
+
+    </td>
+  </tr>
+</table>
+</div>
+</body>
+</html> 

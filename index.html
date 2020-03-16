@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif;}
+
+.sidebar {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1C86EE;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1f1f1;
+  display: block;
+  margin-left: 10%; /* Same as the width of the sidenav */
+}
+
+.sidebar a:hover {
+  color: #111;
+}
+
+.main {
+  margin-left: 20%; /* Same as the width of the sidenav */
+  padding: 2% 20% 5% 5%;
+}
+
+.menu {
+  margin-left: 10%; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+  font-size: 40px;
+  color: #f1f1f1;
+}
+.profile {
+  display: block;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.list {
+	list-style-type: square;
+}
+.maintext{
+	line-height: 1.6;
+	font-size:120%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <img src="img/profile.jpeg" width="250" height="250" class="profile">
+  <h1 class="menu">Danlu Liu</h1>
+  <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="publication.html"><i class="fa fa-fw fa-file-text-o"></i> Publications</a>
+<!--   <a href="#blog"><i class="fa fa-fw fa-rss"></i> Blogs</a> -->
+  <a href="pdf/Danlu_Liu_resume.pdf"><i class="fa fa-fw fa-user"></i> Resume</a>
+  <a href="mailto:dltb9@mail.missouri.edu"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+</div>
+
+<div class="main">
+  <h1 style="color:#1C86EE;">About Me</h1>
+  <p class="maintext">
+  	I am currently a Ph.D. student at <a href="https://missouri.edu/" style="color:#1C86EE">University of Missouri-Columbia</a>, advised by Professor <a href="https://engineering.missouri.edu/faculty/chi-ren-shyu/" style="color:#1C86EE">Chi-Ren Shyu</a>. I am a graduate research assistant at the Center for Interdisciplinary Data Analytics and Search (iDAS).
+  </p>
+  <p class="maintext">
+  	I received a B.S. Degree in Mathematics and Applied Mathematics from China University of Petroleum (East China) in 2015, and received my M.S. degree in Computer Science from the <a href="https://missouri.edu/" style="color:#1C86EE">University of Missouri-Columbia</a> in 2017. 
+  </p>
+  <hr>
+  <h1 style="color:#1C86EE;">News</h1>
+  <ul class="list maintext">
+  	<li>03/2020:  One collaborated abstract accepted by The American Diabetes Association’s 80th Scientific Sessions (#ADA2020)</li>
+  	<li>02/2020:  Attended 3rd Annual ICTS Symposium and Poster Session</li>
+  	<li>10/2019:  Passed my Ph.D. qualify exam!</li>
+  	<li>09/2019:  One paper accepted by IEEE Journal of Biomedical and Health Informatics (IF: 4.217)</li>
+  </ul>
+  <hr>
+  <h1 style="color:#1C86EE;">Research Interest</h1>
+  <ul class="list maintext">
+  	<li><b>deep data mining & cohort discovery:</b> Discover cohorts & biomarkers, Precision health, hypothesis generation on clinical data</li>
+  	<li><b>pattern mining:</b> High Performance Computing on pattern mining, indexing structure</li>
+  	<li><b>explainable AI (XAI)</b></li>
+  </ul>
+</div>
+</body>
+</html> 
